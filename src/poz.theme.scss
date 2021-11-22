@@ -10,8 +10,8 @@ $color-lighter: scale-color($color-light, $lightness:10%);;
 $color-light-darker:scale-color($color-light, $lightness:-30%);
 $color-light-darkerA:rgba($color-light-darker,.7);
 $color-dark : #131315;
-$color-accent: #db5e85;
-//$color-accent: #d97abd;
+//$color-accent: #db5e85;
+$color-accent: #d97abd;
 $color-accent-dark: scale-color($color-accent, $lightness:-30%);
 $color-accent-light:scale-color($color-accent,$lightness:20%);
 
@@ -167,6 +167,17 @@ div[aria-label="Clyde"] {
 	background-color: $color-lighter;
 	background: $color-lighter;
 	animation: fade_in .25s linear;
+}
+
+// dm chat list
+
+#app-mount .channel-2QD9_O{
+	border-radius: 0 1em 1em 0;
+}
+
+// message buttons
+.wrapper-2aW0bm {
+	box-shadow: 3px 4px 6px 2px rgba(10,10,10,.3);
 }
 
 
@@ -425,6 +436,10 @@ div[aria-label="Clyde"] {
 }
 //.colorDefault-2K3EoJ:active:not(.hideInteraction-1iHO1O)
 
+.actionIcon-PgcMM2, .modeSelected-346R90 div > svg, .closeIcon-rycxaQ {
+	color: $color-accent !important;
+}
+//aaaafff
 // overlay positioning
 .wrapper-3jrx9n {
 	border:2px solid $color-accent;
@@ -454,6 +469,7 @@ div[aria-label="Clyde"] {
 #EditUploadsModal {
 	@extend %fixColour
 }
+
 
 @if($DisableStickers) {
 /** STICKER REMOVER  */
